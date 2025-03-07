@@ -1,0 +1,37 @@
+.toolbox {
+    display: flex;
+    gap: 10px;
+    padding: 12px;
+    background: #1e1e1e;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    justify-content: space-around;
+}
+
+/* Responsive for smaller screens */
+@media (max-width: 600px) {
+    .toolbox {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+.movingtext {
+    display: inline-block;
+    position: relative;
+    animation: moveText 1s linear infinite;
+}
+
+@keyframes moveText {
+    0% {
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateX(10px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}

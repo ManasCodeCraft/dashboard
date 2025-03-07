@@ -1,0 +1,48 @@
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #121212;
+    padding: 20px;
+}
+
+.textarea {
+    width: 100%;
+    height: 100%;
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    border: 2px solid #ccc;
+    font-size: 1.2rem;
+    color: black;
+    outline: none;
+    overflow-y: auto;
+    min-height: 200px;
+}
+
+.textarea:empty::before {
+    content: attr(placeholder);
+    color: gray;
+    font-style: italic;
+}
+
+.textarea:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
+}
+
+.textarea ul {
+    padding-left: 40px;
+    /* Base padding for normal bullets */
+}
+
+.textarea ul ul {
+    padding-left: 60px;
+    /* Increase padding for sublists */
+}
+
+.textarea ul ul ul {
+    padding-left: 80px;
+    /* More padding for deeper sublists */
+}
