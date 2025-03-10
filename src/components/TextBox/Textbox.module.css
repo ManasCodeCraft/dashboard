@@ -14,7 +14,7 @@
     padding: 15px;
     border-radius: 10px;
     border: 2px solid #ccc;
-    font-size: 1.2rem;
+    font-size: 1rem;
     color: black;
     outline: none;
     overflow-y: auto;
@@ -46,3 +46,5 @@
     padding-left: 80px;
     /* More padding for deeper sublists */
 }
+
+
